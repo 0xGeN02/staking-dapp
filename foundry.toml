@@ -1,0 +1,7 @@
+[profile.default]
+src = 'foundry/src'
+out = 'foundry/out'
+libs = ['foundry/lib']
+
+[rpc_endpoints]
+default = 'http://localhost:8545'
