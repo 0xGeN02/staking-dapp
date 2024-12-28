@@ -1,3 +1,7 @@
+#Ignore
+.env
+./foundry/cache/*
+
 # Logs
 logs
 *.log
