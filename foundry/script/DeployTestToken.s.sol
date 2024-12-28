@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
-import "lib/forge-std/Script.sol";
+import "forge-std/Script.sol";
 import "../src/TestToken.sol";
 
 contract DeployTestToken is Script {

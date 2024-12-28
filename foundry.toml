@@ -1,7 +1,38 @@
 [profile.default]
 src = 'foundry/src'
+lib = 'foundry/lib'
 out = 'foundry/out'
-libs = ['foundry/lib']
+test = 'foundry/test'
+broadcast = 'foundry/broadcast'
+cache_path = 'foundry/cache'
 
+# Remappings for Forge-Std and OpenZeppelin Contracts
+remappings = [
+  "forge-std=lib/forge-std/src/",
+  "openzeppelin-contracts=lib/openzeppelin-contracts/"
+]
+
+# Formatter configuration for Solidity
+[fmt]
+line_length = 120  # Maximum line length
+tab_width = 4      # Tab width for indentation
+bracket_spacing = true
+
+# Documentation generator configuration
+[doc]
+out = "docs"
+title = "My Project Documentation"
+book = "./book.toml"
+repository = "${GIT_REPOSITORY}"  # Git repository URL from .env
+ignore = ["tests/*", "examples/*"]
+
+# Etherscan configuration
+[etherscan]
+mainnet = { key = "${ETHERSCAN_KEY}" }
+sepolia = { key = "${SEPOLIASCAN_KEY}", chain = "sepolia" }
+
+# Chains configuration for Ethereum, Polygon, and Testnets
 [rpc_endpoints]
-default = 'http://localhost:8545'
+anvil = "${ANVIL_LOCALHOST}"  # Local development endpoint
+mainnet = "${ETHEREUM_RPC}"
+sepolia = "${SEPOLIA_RPC}"
