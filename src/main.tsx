@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-function App() {
-  return <h1>This is An Staking Tokens DApp</h1>;
-}
+import { App } from "./app";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

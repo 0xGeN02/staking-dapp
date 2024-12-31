@@ -1,0 +1,7 @@
+[book]
+title = "My Project Documentation"
+authors = ["Your Name"]
+language = "en"
+
+[output.html]
+default-theme = "light"

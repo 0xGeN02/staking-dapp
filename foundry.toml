@@ -4,12 +4,14 @@ lib = 'foundry/lib'
 out = 'foundry/out'
 test = 'foundry/test'
 broadcast = 'foundry/broadcast'
-cache_path = 'foundry/cache'
+cache_path = 'cache'
+verbosity = 5
 
 # Remappings for Forge-Std and OpenZeppelin Contracts
 remappings = [
-  "forge-std=lib/forge-std/src/",
-  "openzeppelin-contracts=lib/openzeppelin-contracts/"
+  "forge-std=foundry/lib/forge-std/src/",
+  "openzeppelin=foundry/lib/openzeppelin-contracts/",
+  "openzeppelin-contracts=foundry/lib/openzeppelin-contracts/contracts/"
 ]
 
 # Formatter configuration for Solidity
@@ -21,10 +23,10 @@ bracket_spacing = true
 # Documentation generator configuration
 [doc]
 out = "docs"
-title = "My Project Documentation"
+title = "Staking-DApp-Contracts Documentation"
 book = "./book.toml"
 repository = "${GIT_REPOSITORY}"  # Git repository URL from .env
-ignore = ["tests/*", "examples/*"]
+ignore = ["test/*", "examples/*"]
 
 # Etherscan configuration
 [etherscan]

@@ -1,0 +1,15 @@
+[book]
+src = "src"
+title = "My Project Documentation"
+authors = ["Your Name"]
+language = "en"
+
+[output.html]
+no-section-label = true
+additional-js = ["solidity.min.js"]
+additional-css = ["book.css"]
+git-repository-url = "${GIT_REPOSITORY}"
+default-theme = "light"
+
+[output.html.fold]
+enable = true
